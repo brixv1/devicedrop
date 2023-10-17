@@ -1,4 +1,4 @@
-![Logo](https://devicedrop.vercel.app/icon.svg?b3c82194f90af4c5)
+![Preview](https://github.com/brixv1/devicedrop/assets/135877207/17b61a7a-e552-4b50-a3bc-d31db0c6d9c6)
 
 # DeviceDrop
 
