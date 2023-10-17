@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* date styles */
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span::after {
+  background-color: #fff !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  background: #22c55e !important;
+}
+
+.rdrMonthAndYearPickers {
+  font-size: 16px;
+}
+
+.rdrDayNumber,
+.rdrWeekDay {
+  color: #1e1f23 !important;
+  font-weight: 500 !important;
+}
+
+/* swiper styles */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #22c55e;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #22c55e #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 19px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #22c55e;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #16a34a;
+}
+
+@layer base {
+  body {
+    @apply overflow-x-hidden bg-body text-primary;
+  }
+  p {
+    @apply text-secondary;
+  }
+  .h1 {
+    @apply mb-[18px] text-4xl font-extrabold text-primary xl:text-[64px] xl:leading-[72px];
+  }
+  .h2 {
+    @apply mb-6 text-4xl font-bold;
+  }
+  .h3 {
+    @apply mb-4 text-xl font-semibold;
+  }
+  .description {
+    @apply text-base xl:text-xl xl:leading-8;
+  }
+  .section {
+    @apply h-screen w-full pt-[60px] xl:pt-[120px];
+  }
+  .btn {
+    @apply flex w-full items-center justify-center rounded-[10px] text-[13px] font-medium uppercase tracking-[2px] text-white transition-all duration-300;
+  }
+  .btn-sm {
+    @apply h-14;
+  }
+  .btn-lg {
+    @apply h-16;
+  }
+  .btn-cta {
+    @apply h-[54px] rounded-[5px] bg-primary px-4 transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-primary;
+  }
+  .btn-secondary {
+    @apply bg-secondary;
+  }
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-hover;
+  }
+  .active {
+    @apply text-accent;
+  }
+}
