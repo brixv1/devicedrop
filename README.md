@@ -1,4 +1,4 @@
-![Logo](.)
+![Logo](https://devicedrop.vercel.app/icon.svg?b3c82194f90af4c5)
 
 # DeviceDrop
 
@@ -10,7 +10,7 @@ DeviceDrop simulates the frontend for an device renting service.
 
 ## Demo
 
-.
+[.](https://devicedrop.vercel.app/)
 
 
 ## Features
